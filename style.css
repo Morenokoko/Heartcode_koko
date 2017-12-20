@@ -1,0 +1,95 @@
+/* fonts*/
+@font-face{
+    font-family: lightfont;
+    src: url(the_light_font/TheLightFont.ttf);
+}
+@font-face{
+    font-family: lemon;
+    src: url(lemon_milk/LemonMilk.otf);
+}
+@font-face{
+    font-family: brooklyn;
+    src: url(the_brooklyn/TheBrooklyn.otf);
+}
+@font-face{
+    font-family: editors;
+    src: url(editors/EDITORS.ttf)
+}
+@font-face{
+    font-family: goldoni;
+    src: url(goldoni/Goldoni_DEMO.otf)
+}
+/*navigation bar */
+.nav-tabs{
+    font-family: lightfont;
+    font-size: 20px;
+    border-bottom: 0px;
+}
+
+.nav-tabs li a:hover{
+    color: #555;
+    background-color: white;
+    border: 1px solid white;
+    border-bottom-color: transparent;
+}
+.nav-tabs li.active a, .nav-tabs li.active a:hover{
+    border: 1px solid white;
+    border-bottom-color: transparent;
+}
+.nav-tabs li.inactive a{
+    color: #333;
+    background-color: white;
+    opacity: 0.7;
+    border-bottom-color: transparent;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.nav-tabs li.inactive a:hover{
+   opacity: 1;
+}
+
+
+/*thumbnail*/
+.thumbnail{
+    background-color: antiquewhite;
+}
+.thumbnail img{
+    margin-top: 20px;
+}
+.thumbnail .caption h2{
+    text-align: center;
+    font-family: goldoni;
+    font-size: 25px;
+}
+.thumbnail .caption {
+    text-align: center;
+    font-family: lightfont;
+    font-size: 25px;
+}
+
+/*content*/
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.about{
+    font-family: goldoni;
+    text-align: center;
+}
+
+.aboutpara h2{
+    font-family: lightfont;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*button*/
+.btn-primary {
+    background-color: rgb(160, 160, 160);
+    border-color: transparent;
+    font-size: 18px;
+}
+.btn-primary:hover {
+    background-color: grey;
+    border-color: transparent;
+    font-size: 18px;
+}
