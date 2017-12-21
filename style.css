@@ -1,35 +1,105 @@
 /* fonts*/
 @font-face{
     font-family: lightfont;
-    src: url(the_light_font/TheLightFont.ttf);
+    src: url(font/the_light_font/TheLightFont.ttf);
 }
 @font-face{
     font-family: lemon;
-    src: url(lemon_milk/LemonMilk.otf);
+    src: url(font/lemon_milk/LemonMilk.otf);
 }
 @font-face{
     font-family: brooklyn;
-    src: url(the_brooklyn/TheBrooklyn.otf);
+    src: url(font/the_brooklyn/TheBrooklyn.otf);
 }
 @font-face{
     font-family: editors;
-    src: url(editors/EDITORS.ttf)
+    src: url(font/editors/EDITORS.ttf)
 }
 @font-face{
     font-family: goldoni;
-    src: url(goldoni/Goldoni_DEMO.otf)
+    src: url(font/goldoni/Goldoni_DEMO.otf)
+}
+@font-face{
+    font-family: sunday;
+    src:url(font/reality_sunday/rslight.ttf)
+}
+@font-face{
+    font-family: edward;
+    src: url(font/dk_uncle_edward/edward.otf)
+}
+@font-face{
+    font-family: stand;
+    src: url(font/lemonade_stand/stand.otf)
+}
+
+/*body*/
+.content-container{
+    margin: 0px;
+    width: 100%;
+}
+.panel{
+    height:250px;
+    border: 0px;
+    margin: 70px;
+    box-shadow: none;
+    background-color: transparent;
+}
+.panel h1{
+    margin: 0px;
+    font-family: sunday;
+}
+.panel p{
+    font-family: lightfont;
+    font-size: 20px;
+}
+.content-img{
+    height: 250px;
+    width: 350px;
+}
+.tabphotos{
+    position: relative;
+}
+.img{
+    opacity:1;
+    display: block;
+    transition: .5s ease;
+    margin: 0px;
+    border-radius: 8px;
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.tabphotos:hover .img{
+    opacity: 0.5;
+}
+.tabphotos:hover .middle{
+    opacity: 0.8;
+}
+.img-text{
+    background-color: antiquewhite;
+    color: black;
+    font-size: 25px;
+    padding: 5px 30px;
+    font-family: stand;
+    text-align: center;
 }
 /*navigation bar */
 .nav-tabs{
     font-family: lightfont;
     font-size: 20px;
     border-bottom: 0px;
+    
 }
 
 .nav-tabs li a:hover{
     color: #555;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid antiquewhite;
     border-bottom-color: transparent;
 }
 .nav-tabs li.active a, .nav-tabs li.active a:hover{
@@ -52,9 +122,13 @@
 /*thumbnail*/
 .thumbnail{
     background-color: antiquewhite;
+    opacity: 0.8;
+    border-radius: 10px;
 }
 .thumbnail img{
-    margin-top: 20px;
+    height:250px;
+    width: 250px;
+    border-radius: 10px;
 }
 .thumbnail .caption h2{
     text-align: center;
@@ -66,14 +140,15 @@
     font-family: lightfont;
     font-size: 25px;
 }
+.item{
+    margin: 20px 20px 0px 20px;
+}
 
 /*content*/
-.content h1{
-    font-family: 'Times New Roman', Times, serif;
-}
-.about{
-    font-family: goldoni;
+.about h1{
+    font-family: sunday;
     text-align: center;
+    font-size: 60px;
 }
 
 .aboutpara h2{
@@ -83,13 +158,66 @@
 }
 
 /*button*/
-.btn-primary {
+.btn-hp {
     background-color: rgb(160, 160, 160);
     border-color: transparent;
     font-size: 18px;
+    color: white;
 }
-.btn-primary:hover {
+.btn-hp:hover {
     background-color: grey;
     border-color: transparent;
     font-size: 18px;
+    color: white;
+}
+
+.btn-hp:active{
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+
+/*footer*/
+footer{
+    bottom: 0;
+    text-align: center;
+}
+footer img{
+    position: relative;
+    opacity: 0.3;
+    width: 100%;
+    margin-top: -175px;
+    margin-bottom: -150px;
+    z-index: -2;
+}
+footer h4{
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+    z-index: -1;
+    font-family: lemon;
+    opacity: 0.6;
+    color: black;
+}
+
+
+footer a{
+    color:black;
+    opacity: 0.6;
+}
+footer a:hover{
+    opacity: 1;
+    color: black;
+}
+footer a:visited{
+    color:black;
+    opacity: 0.6;
+}
+.contentfooterimg{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.contentfootertext{
+    position: relative;
+    margin: -150px;
 }
